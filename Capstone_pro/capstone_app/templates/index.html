@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div style="border:20px; width:960px; height:500px;background-color: #fafbfc;margin-left:-220px; border-radius:20px " >
+
+     {% for mv in movies %}
+        <img src="{{mv.image.url}}">
+     {% endfor %}
+
+    </div>
+    <div style="border:20px; width:1550px; height:1000px;background-color: #fafbfc;margin-left:-220px; margin-top: 20px; " >
+        <h1> movies on plat</h1>
+    </div>
+{% endblock content %}
